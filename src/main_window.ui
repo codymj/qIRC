@@ -32,7 +32,7 @@
       <widget class="QWidget" name="layoutWidget">
        <layout class="QVBoxLayout" name="verticalLayout_2">
         <item>
-         <widget class="QTreeWidget" name="networkTree">
+         <widget class="QTreeWidget" name="network_tree_widget">
           <attribute name="headerVisible">
            <bool>false</bool>
           </attribute>
@@ -59,7 +59,7 @@
            </spacer>
           </item>
           <item>
-           <widget class="QLabel" name="charsLeftLbl">
+           <widget class="QLabel" name="chars_remaining_label">
             <property name="text">
              <string>TextLabel</string>
             </property>
@@ -85,7 +85,7 @@
       <widget class="QWidget" name="layoutWidget">
        <layout class="QVBoxLayout" name="verticalLayout">
         <item>
-         <widget class="QLineEdit" name="topicLE">
+         <widget class="QLineEdit" name="topic_line_edit">
           <property name="enabled">
            <bool>true</bool>
           </property>
@@ -95,7 +95,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QTextEdit" name="outputTE">
+         <widget class="QTextEdit" name="output_widget">
           <property name="sizePolicy">
            <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
             <horstretch>0</horstretch>
@@ -138,7 +138,7 @@ p, li { white-space: pre-wrap; }
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout">
           <item>
-           <widget class="QPushButton" name="changeNickBtn">
+           <widget class="QPushButton" name="change_name_button">
             <property name="text">
              <string>NickName008</string>
             </property>
@@ -148,7 +148,7 @@ p, li { white-space: pre-wrap; }
            </widget>
           </item>
           <item>
-           <widget class="QLineEdit" name="inputLE"/>
+           <widget class="QLineEdit" name="input_line_edit"/>
           </item>
          </layout>
         </item>
@@ -157,7 +157,7 @@ p, li { white-space: pre-wrap; }
       <widget class="QWidget" name="layoutWidget">
        <layout class="QVBoxLayout" name="verticalLayout_3">
         <item>
-         <widget class="QListWidget" name="nickList"/>
+         <widget class="QListWidget" name="nick_list_widget"/>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_3">
@@ -175,7 +175,7 @@ p, li { white-space: pre-wrap; }
            </spacer>
           </item>
           <item>
-           <widget class="QLabel" name="userCountLbl">
+           <widget class="QLabel" name="user_count_label">
             <property name="text">
              <string>TextLabel</string>
             </property>
@@ -202,7 +202,7 @@ p, li { white-space: pre-wrap; }
     </item>
    </layout>
   </widget>
-  <widget class="QMenuBar" name="menuBar">
+  <widget class="QMenuBar" name="menu_bar">
    <property name="geometry">
     <rect>
      <x>0</x>
@@ -211,52 +211,52 @@ p, li { white-space: pre-wrap; }
      <height>22</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuFile">
+   <widget class="QMenu" name="file_menu">
     <property name="title">
      <string>&amp;File</string>
     </property>
-    <addaction name="openNetworkDlgAction"/>
+    <addaction name="network_dialog_action"/>
     <addaction name="separator"/>
-    <addaction name="exitAction"/>
+    <addaction name="exit_app_action"/>
    </widget>
-   <widget class="QMenu" name="menuView">
+   <widget class="QMenu" name="view_menu">
     <property name="title">
      <string>&amp;View</string>
     </property>
-    <addaction name="hideMenuBarAction"/>
-    <addaction name="restoreSplitterRatiosAction"/>
+    <addaction name="hide_menu_action"/>
+    <addaction name="restore_splitter_ratio_action"/>
    </widget>
-   <widget class="QMenu" name="menuHelp">
+   <widget class="QMenu" name="help_menu">
     <property name="title">
      <string>&amp;Help</string>
     </property>
-    <addaction name="aboutAction"/>
+    <addaction name="about_qirc_action"/>
    </widget>
-   <addaction name="menuFile"/>
-   <addaction name="menuView"/>
-   <addaction name="menuHelp"/>
+   <addaction name="file_menu"/>
+   <addaction name="view_menu"/>
+   <addaction name="help_menu"/>
   </widget>
-  <action name="openNetworkDlgAction">
+  <action name="network_dialog_action">
    <property name="text">
     <string>&amp;Network List</string>
    </property>
   </action>
-  <action name="exitAction">
+  <action name="exit_app_action">
    <property name="text">
     <string>E&amp;xit</string>
    </property>
   </action>
-  <action name="aboutAction">
+  <action name="about_qirc_action">
    <property name="text">
     <string>About</string>
    </property>
   </action>
-  <action name="hideMenuBarAction">
+  <action name="hide_menu_action">
    <property name="text">
     <string>Hide Menu Bar</string>
    </property>
   </action>
-  <action name="restoreSplitterRatiosAction">
+  <action name="restore_splitter_ratio_action">
    <property name="text">
     <string>Restore Splitter Ratios</string>
    </property>
