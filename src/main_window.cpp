@@ -5,6 +5,7 @@
 MainWindow::MainWindow() {
     setupUi(this);
     restore_splitter_ratio();
+    initialize_screen_name();
 }
 
 
@@ -21,4 +22,11 @@ void MainWindow::restore_splitter_ratio() {
 
 	splitter_sizes << network_tree_width << center_output_width << nick_list_width;
 	splitter->setSizes(splitter_sizes);
+}
+
+
+// Initialize screen name
+void MainWindow::initialize_screen_name() {
+	this->screen_name = "qIRC-" + QString::number(qrand() % 10000);
+	this->edit_screen_name_button->setText(this->screen_name);
 }
