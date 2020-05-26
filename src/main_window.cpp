@@ -20,13 +20,15 @@ void MainWindow::restore_splitter_ratio() {
 	nick_list_width = main_window_width * 7/40;
 	center_output_width = main_window_width * 26/40;
 
-	splitter_sizes << network_tree_width << center_output_width << nick_list_width;
+	splitter_sizes << network_tree_width
+				   << center_output_width
+				   << nick_list_width;
 	splitter->setSizes(splitter_sizes);
 }
 
 
 // Initialize screen name
 void MainWindow::initialize_screen_name() {
-	this->screen_name = "qIRC-" + QString::number(qrand() % 10000);
-	this->edit_screen_name_button->setText(this->screen_name);
+	screen_name = "qIRC-" + QString::number(qrand() % 10000);
+	edit_screen_name_button->setText(this->screen_name);
 }
