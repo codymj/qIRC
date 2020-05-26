@@ -3,7 +3,7 @@
 
 
 #include <QtWidgets/QMainWindow>
-#include "../qIRC_autogen/include/ui_main_window.h"
+#include "../qIRC_autogen/qIRC_autogen/include/ui_main_window.h"
 
 
 class MainWindow : public QMainWindow, public Ui::MainWindow {
@@ -22,10 +22,10 @@ public:
 	QString screen_name;
 
     // Splitter data
-    int main_window_width;
-    int network_tree_width;
-    int nick_list_width;
-    int center_output_width;
+    int main_window_width = 0;
+    int network_tree_width = 0;
+    int nick_list_width = 0;
+    int center_output_width = 0;
 	QList<int> splitter_sizes;
 };
 
