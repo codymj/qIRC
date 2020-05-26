@@ -10,17 +10,23 @@ class MainWindow : public QMainWindow, public Ui::MainWindow {
     Q_OBJECT
 
 
+private:
+	void restore_splitter_ratio();
+	void initialize_screen_name();
+
+
 public:
     MainWindow();
     ~MainWindow() override;
 
-    int main_window_width{};
-    int network_tree_width{};
-    int nick_list_width{};
-    int center_output_width{};
+	QString screen_name;
+
+    // Splitter data
+    int main_window_width;
+    int network_tree_width;
+    int nick_list_width;
+    int center_output_width;
 	QList<int> splitter_sizes;
-private:
-	void restore_splitter_ratio();
 };
 
 
