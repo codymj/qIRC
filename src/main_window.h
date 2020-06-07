@@ -2,6 +2,7 @@
 #define _MAINWINDOW_H_
 
 
+#include <QtCore/QRandomGenerator>
 #include <QtWidgets/QMainWindow>
 #include "../qIRC_autogen/qIRC_autogen/include/ui_main_window.h"
 
