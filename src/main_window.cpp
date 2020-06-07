@@ -29,6 +29,7 @@ void MainWindow::restore_splitter_ratio() {
 
 // Initialize screen name
 void MainWindow::initialize_screen_name() {
-	screen_name = "qIRC-" + QString::number(qrand() % 10000);
+	QRandomGenerator random_generator;
+	screen_name = "qIRC-" + QString::number(random_generator.generate() % 10000);
 	edit_screen_name_button->setText(this->screen_name);
 }
